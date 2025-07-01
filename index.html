@@ -14,7 +14,7 @@ document.getElementById('contact-form').addEventListener('submit', async (e) => 
     email: form.email.value,
     message: form.message.value
   };
-  const res = await fetch('/api/contact', {
+  const res = await fetch('https://homepage-deploy.onrender.com/api/contact', {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify(data)
